@@ -30,3 +30,7 @@
 .text {
     padding-bottom: 40px;
 }
+.fa-solid.fa-cart-shopping{
+    color: #000;
+    margin-left: -1rem;
+}
