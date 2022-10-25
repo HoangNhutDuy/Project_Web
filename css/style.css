@@ -27,3 +27,6 @@
 .nav-link-5:hover a, .nav-link-6:hover a{
     color: white;
 }
+.text {
+    padding-bottom: 40px;
+}
