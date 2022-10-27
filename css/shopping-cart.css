@@ -57,7 +57,7 @@ th{
     padding: 0.9375rem;
     text-align: left;
     color: white;
-    background-color: #009999;
+    background-color:var(--main-color);
 }
 td{
     padding: 0.3125rem;
@@ -87,7 +87,7 @@ p{
 }
 .total_price table{
   
-    border-top: 3px solid #009999;
+    border-top: 3px solid var(--main-color);
     width: 24rem;
     padding: 1rem 0;
     table-layout: fixed;
@@ -111,7 +111,7 @@ th:last-child{
     border: none;
     font-size: 1.2rem;
     border-radius: 1.2rem;
-    background-color: #009999;
+    background-color: var(--main-color);
     color: white;
     transition: 0.5s;
 }
