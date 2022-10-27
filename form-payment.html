@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/templatemo-style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/form-payment.css">
 </head>
+
 <body>
-    <header id="header"></header>
-    <footer id="footer"></footer>
+    <div id="loader-wrapper"></div>
+    <div class="container">
+        <form action="">
+            <h1 class="form_title">Thanh toán</h1>
+            <div class="card_type">
+                <div class="card_paypal">
+                    <input type="radio">
+                    <div class="card_img">
+                        <img src="img/paypal.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="card_type">
+                <div class="card_credits">
+                    <input type="radio">
+                    <p>Thẻ tín dụng</p>
+                </div>
+                <div class="card_img">
+                    <img src="img/card_credits.png" alt="">
+                </div>
+            </div>
+
+            <h2 class="card_title">Thông tin thẻ</h2>
+            <div class="card_info">
+                <input type="text" placeholder="Tên trên thẻ">
+
+            </div>
+            <div class="card_info">
+                <input type="text" placeholder="Số thẻ tín dụng">
+            </div>
+            <div class="card_footer">
+                <div class="card_date">
+                    <p>Ngày hết hạn</p>
+                    <input type="text" placeholder="Ngày/Tháng/Năm">
+                </div>
+                <div class="card_cvc">
+                    <p>CVC</p>
+                    <input type="text" placeholder="123">
+                </div>
+            </div>
+            <button type="submit" class="pay">Thanh toán</button>
+        </form>
+    </div>
 </body>
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/plugins.js"></script>
+<script>
+    $(window).on("load", function () {
+        $('body').addClass('loaded');
+    });
+</script>
+
 </html>
