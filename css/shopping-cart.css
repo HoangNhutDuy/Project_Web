@@ -4,22 +4,37 @@
     box-sizing: border-box;
 }
 
-.container-fluid{
-background-color: #eee;
+/* .navbar.navbar-expand-lg .container-fluid{
+background-color: #009999;
 margin-top: -0.4rem;
-
+} */
+/* .nav-item a{
+    color: #000;
+} */
+:root{
+    --main-color:#009999 ;
 }
 .container{
     margin: 80px auto;
-   
+  padding: 15px 5px;
+
+}
+.container a{
+    color: var(--main-color);
+}
+.container a:hover{
+    color: #086969;
+    text-decoration: underline;
 }
 .cart_page{
   padding: 0 20px;
+
 
 }
 table{
     width: 100%;
     border-collapse: collapse;
+
 }
 .product_details{
     display: flex;
@@ -42,10 +57,11 @@ th{
     padding: 0.9375rem;
     text-align: left;
     color: white;
-    background-color: dodgerblue;
+    background-color: #009999;
 }
 td{
     padding: 0.3125rem;
+
 }
 
 td input{
@@ -59,6 +75,7 @@ p{
 .product_info p{
     margin-bottom: 0;
 }
+
 .total_price{
     margin-top: 1rem;
     display: flex;
@@ -70,9 +87,10 @@ p{
 }
 .total_price table{
   
-    border-top: 3px solid dodgerblue;
+    border-top: 3px solid #009999;
     width: 24rem;
     padding: 1rem 0;
+    table-layout: fixed;
 }
 
  td:last-child{
@@ -80,4 +98,32 @@ p{
 }
 th:last-child{
     text-align: right;
+}
+.payment{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.2rem 0;
+    transform: translateX(-0.7rem);
+}
+.payment button{
+    padding: 0.5rem 1.2rem ;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+    background-color: #009999;
+    color: white;
+    transition: 0.5s;
+}
+.payment .continue_buy_btn{
+    margin-right: 3rem;
+    background-color: #F2F2F2;
+    color: #000;
+}
+
+.payment button:hover{
+    background-color: #086969;
+}
+.payment .continue_buy_btn:hover{
+    color: white;
 }
