@@ -24,7 +24,7 @@ form{
 
 .form_title{
     text-align: center;
-
+    margin-bottom: 1.5rem;
 }
 .card_type{
     width: 100%;
@@ -67,6 +67,19 @@ form{
     border-bottom: 1px solid #F2F2F2;
     padding: 0.2rem 0;
 }
+.card_info{
+    position: relative;
+}
+.card_info_span{
+    top: 3.375rem;
+    left: 0;
+    position: absolute;
+    width: 0;
+    border-bottom: 2px solid #009999;
+    transition: 0.6s;
+}
+
+
 .card_footer{
     margin-top: 1.5rem;
     display: flex;
@@ -74,10 +87,13 @@ form{
 }
 .card_date, .card_cvc{
    width: 50%;
+   position: relative;
+
 }
 .card_date{
     margin-right: 2rem;
 }
+
 .card_footer input{
     width: 100%;
     border: none;
@@ -85,15 +101,41 @@ form{
     border-bottom: 1px solid #F2F2F2;
     margin-top: 0.5rem;
 }
+.card_date_span{
+    position: absolute;
+    left: 0;
+    top: 4.5rem;
+    border-bottom: 2px solid #009999;
+    transition: 0.6s;
+    width: 0;
+}
+.card_cvc_span{
+    position: absolute;
+    left: 0;
+    top: 4.5rem;
+    border-bottom: 2px solid #009999;
+    transition: 0.6s;
+    width: 0;
+}
 .pay{
-    margin-top: 1.5rem;
-    padding: 0.5rem 17.065rem;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+.pay_btn{
     outline: none;
     border: none;
+    padding: 0.5rem 14rem;
     border-radius: 1.2rem;
     background-color: #009999;
     color: white;
+    transition: 0.5s;
 }
-input:focus{
-    border-bottom: 1px solid gray;
+.pay_btn:hover{
+    background-color: #086969;
+}
+input:focus ~ span{
+   width: 100%; 
 }

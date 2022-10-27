@@ -19,10 +19,10 @@ margin-top: -0.4rem;
   padding: 15px 5px;
 
 }
-.container a{
+.product_info a{
     color: var(--main-color);
 }
-.container a:hover{
+.product_info > a:hover{
     color: #086969;
     text-decoration: underline;
 }
@@ -120,10 +120,14 @@ th:last-child{
     background-color: #F2F2F2;
     color: #000;
 }
-
+.payment a{
+    color: white;
+    text-decoration: none;
+}
 .payment button:hover{
     background-color: #086969;
+    color: white;
 }
-.payment .continue_buy_btn:hover{
+.container .payment button > a:hover{
     color: white;
 }
