@@ -28,13 +28,24 @@
 <!--===============================================================================================-->
 
 <style>
+	:root{
+	
+	--bgc-linear:linear-gradient(200deg, #0093E9 0%, #80D0C7 100%);
+
+	}
+	.container-login100::before{
+		background: var(--bgc-linear);
+	}
 	.login100-form{
-		padding: 2rem 1.6rem;
-		background-color: rgba(255, 255, 255, 0.6);
+		padding: 2.0rem 1.4rem;
+		background-color: rgba(255, 255, 255, 0.9);
+		color:black
 	}
-	.remember-password{
+	.forget-password, .forget-password > a{
 		padding-top: 1rem;
+		color: #0093E9;
 	}
+	
 	.other-registers{
 		display: flex;
 		justify-content: center;
@@ -47,6 +58,13 @@
 	.validate-input{
 		padding: 1rem 0;
 	}
+	.login100-form-btn{
+		background-image: var(--bgc-linear);
+	}
+	.focus-input100::before {
+		background: var(--bgc-linear)
+		
+	}
 
 		
 	
@@ -57,7 +75,7 @@
 <body>
 	
 	<div class="limiter">
-		<div class="container-login100" style="background-color: #5eb2b3">
+		<div class="container-login100" style="background: -webkit-linear-gradient(312deg, #FFE53B 0%, #FF2525 74%);;">
 			<div class="wrap-login100 p-t-30 p-b-50">
 				<span class="login100-form-title p-b-41" style="font-size: 36px;">
 					Đăng nhập
@@ -73,9 +91,8 @@
 						<input class="input100" type="password" name="pass" placeholder="Mật khẩu">
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
-					<div class="remember-password">
-						<input type="checkbox" name="remember-password" id="remember-password">
-						<span>Nhớ mật khẩu</span>
+					<div class="forget-password">
+						<a href="#"><span>Quên mật khẩu ?</span></a>
 					</div>
 					<div class="container-login100-form-btn m-t-32">
 						<button class="login100-form-btn">
@@ -94,7 +111,7 @@
 
 					<div class="register_here">
 
-						<p>Chưa có tài khoản? Bạn có thể tạo tài khoản <a href="register.html" style="color:blue ; text-decoration: underline;">Tại đây</a></p>
+						<p>Chưa có tài khoản? Bạn có thể tạo tài khoản <a href="register.html" style="color: #0093E9; text-decoration: underline;">Tại đây</a></p>
 					</div>
 					
 				</form>
