@@ -25,6 +25,11 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <!--===============================================================================================-->
 
 <style>
@@ -73,7 +78,9 @@
 
 </head>
 <body>
-	
+	<div id="loader-wrapper">
+
+	</div>
 	<div class="limiter">
 		<div class="container-login100" style="background: -webkit-linear-gradient(312deg, #FFE53B 0%, #FF2525 74%);;">
 			<div class="wrap-login100 p-t-30 p-b-50">
@@ -138,6 +145,13 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/loader.js" ></script>
+	<script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
 
 </body>
 </html>
