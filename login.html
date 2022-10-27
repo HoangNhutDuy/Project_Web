@@ -43,8 +43,8 @@
 	}
 	.login100-form{
 		padding: 2.0rem 1.4rem;
-		background-color: rgba(255, 255, 255, 0.9);
-		color:black
+		background-color: #fff;
+		color:#111;
 	}
 	.forget-password, .forget-password > a{
 		padding-top: 1rem;
@@ -55,6 +55,12 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+	.other-registers > div{
+		margin-left: 1.2rem;
+	}
+	.other-registers div:first-child{
+		margin-left: 0;
 	}
 	.focus-input100::after{
 		left: 2rem;
@@ -70,6 +76,31 @@
 	.focus-input100::before {
 		background: var(--bgc-linear)
 		
+	}
+	.continue-login{
+		position: relative;
+    	z-index: 1;
+		text-align: center;
+		margin: 0.8rem 0;
+	}
+	.continue-login{
+		position: relative;
+		text-align: center;
+		margin: 1rem 0;
+	}
+	.continue-login::before{
+	position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -0.5px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    content: "";
+	z-index: -1;
+	}
+	.continue-login > span{
+		background-color: #fff;
+		padding: 0 1rem;
 	}
 
 		
@@ -107,19 +138,23 @@
 							<span style="font-size: 16px;">Đăng nhập</span>
 						</button>
 					</div>
-					<p style="text-align: center ; margin: 1rem; color:#999;">Hoặc tiếp tục bằng</p>
+					<div class="continue-login">
+						<span style="text-align: center ; margin: 1rem; color:#999;">Hoặc tiếp tục với</span>
+					</div>
 					<div class="other-registers">
 						<div class="google-register">
-							<a href="#"><img src="img/facebook-register.png" alt="facebook-register"></a>
+							<a href="#"><img src="img/login-icons/facebook-register.png" alt="facebook-register"></a>
 						</div>
 						<div class="google-register">
-							<a href="#"><img src="img/google-register.png" alt="google-register"></a>
+							<a href="#"><img src="img/login-icons/google-register.png" alt="google-register"></a>
+						</div>
+						<div class="gmail-register">
+							<a href="#"><img src="img/login-icons/gmail-register.png" alt="gmail-register"></a>
 						</div>
 					</div>
 
 					<div class="register_here">
-
-						<p>Chưa có tài khoản? Bạn có thể tạo tài khoản <a href="register.html" style="color: #0093E9; text-decoration: underline;">Tại đây</a></p>
+						<p>Chưa có tài khoản? Bạn có thể tạo tài khoản <a href="register.html" style="color: #0093E9; text-decoration: underline;">tại đây</a></p>
 					</div>
 					
 				</form>

@@ -75,7 +75,7 @@ body {
 	margin-bottom: 26px;
 }
 .form-detail input {
-	width: 94.5%;
+	width: 100%;
     padding: 10.5px 15px;
     border: 1px solid #e5e5e5;
     appearance: unset;
