@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --succcess-color : #009999;
+    --error-color: #e74c3c;
+
+}
 body{
     background-color: #F2F2F2;
     height: 100vh;
@@ -13,7 +18,7 @@ body{
     margin-top: 3rem;
     width: 50%;
 }
-form{
+.form-control{
     background-color: white;
     padding: 2rem 1.5rem;
 }
@@ -71,11 +76,11 @@ form{
     position: relative;
 }
 .card_info_span{
-    top: 3.375rem;
+    top: 3.40625rem;
     left: 0;
     position: absolute;
     width: 0;
-    border-bottom: 2px solid #009999;
+    border-bottom: 2px solid var(--succcess-color);
     transition: 0.6s;
 }
 
@@ -105,7 +110,7 @@ form{
     position: absolute;
     left: 0;
     top: 4.5rem;
-    border-bottom: 2px solid #009999;
+    border-bottom: 2px solid var(--succcess-color);
     transition: 0.6s;
     width: 0;
 }
@@ -113,7 +118,7 @@ form{
     position: absolute;
     left: 0;
     top: 4.5rem;
-    border-bottom: 2px solid #009999;
+    border-bottom: 2px solid var(--succcess-color);
     transition: 0.6s;
     width: 0;
 }
@@ -129,7 +134,7 @@ form{
     border: none;
     padding: 0.5rem 14rem;
     border-radius: 1.2rem;
-    background-color: #009999;
+    background-color: var(--succcess-color);
     color: white;
     transition: 0.5s;
 }
@@ -138,4 +143,11 @@ form{
 }
 input:focus ~ span{
    width: 100%; 
+}
+.error input{
+    border-bottom: 2px solid var(--error-color);
+
+}
+.error small{
+    color: var(--error-color);
 }
