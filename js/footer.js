@@ -27,6 +27,7 @@ footer.innerHTML = `  <div class="container-fluid tm-container-small">
         <a href="privacy-policy.html" class="tm-text-gray text-right d-block">Chính sách bảo mật</a>
     </div>
 </div>
+<div class="line" style="border-bottom: solid 1px #999; margin: 2.3rem;"></div>
 <div class="row">
     <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
         Bản quyền 2020 của Catalog-Z Company. Đã đăng ký bản quyền.
