@@ -24,7 +24,7 @@ footer.innerHTML = `  <div class="container-fluid tm-container-small">
             <li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
         </ul>
         <a href="#" class="tm-text-gray text-right d-block mb-2">Điều khoản sử dụng</a>
-        <a href="#" class="tm-text-gray text-right d-block">Chính sách bảo mật</a>
+        <a href="privacy-policy.html" class="tm-text-gray text-right d-block">Chính sách bảo mật</a>
     </div>
 </div>
 <div class="row">

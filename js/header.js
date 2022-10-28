@@ -2,7 +2,7 @@ const header =document.querySelector("header#header")
 header.innerHTML=`
 <nav class="navbar navbar-expand-lg">
 <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
         <i class="fas fa-film mr-2"></i>
         Catalog-Z
     </a>
