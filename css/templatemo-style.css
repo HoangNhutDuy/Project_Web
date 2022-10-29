@@ -5,7 +5,7 @@ TemplateMo 556 Catalog-Z
 https://templatemo.com/tm-556-catalog-z
 
 */
-@import url(/css/shopping-cart.css);
+@import url(shopping-cart.css);
 #loader-wrapper {
     position: fixed;
     top: 0;
