@@ -115,15 +115,16 @@
     </script>
     <script>
         var hearts = document.querySelectorAll('.heart');
-        var products = document.querySelectorAll('.product')
+        var productsImg = document.querySelectorAll('.product_img')
+      
+        productsImg.forEach(productImg => {
+            productImg.addEventListener('click',function(){
+                window.location.href = 'photo-detail.html'
+            })
+        })
         hearts.forEach(heart => {
             heart.addEventListener('click', function(){
                 heart.classList.toggle('like');
-            })
-        })
-        products.forEach(product => {
-            product.addEventListener('click',function(){
-                window.location.href = 'photo-detail.html'
             })
         })
     </script>
