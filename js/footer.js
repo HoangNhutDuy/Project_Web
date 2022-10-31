@@ -11,7 +11,7 @@ footer.innerHTML = `  <div class="container-fluid tm-container-small">
         <h3 class="tm-text-primary mb-4 tm-footer-title">Đường dẫn</h3>
         <ul class="tm-footer-links pl-0">
             <li><a href="#">Quảng cáo</a></li>
-            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="support.html">Hỗ trợ</a></li>
             <li><a href="company.html">Công ty</a></li>
             <li><a href="contact.html">Liên hệ</a></li>
         </ul>
