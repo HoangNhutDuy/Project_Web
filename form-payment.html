@@ -18,7 +18,7 @@
     <div class="container">
         <form action="" class="form-control">
             <h1 class="form_title">Thanh toán</h1>
-            
+
             <div class="card_type">
                 <div class="card_credits">
                     <input type="radio" id="checkcredits" class="checkbox" name="card">
@@ -220,12 +220,12 @@
             function checkDateFormat(input) {
                 let dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
                 if (input.value.trim().match(dateformat)) {
-                    let operator = dateString.split('/');
-                    
+                    let operator = input.value.trim().split('/');
+
                     // Extract the string into month, date and year      
                     let datepart = [];
                     if (operator.length > 1) {
-                        pdatepart = dateString.split('/');
+                        pdatepart = input.value.trim().split('/');
                     }
                     let day = parseInt(datepart[0]);
                     let month = parseInt(datepart[1]);
@@ -256,6 +256,7 @@
 
                     return false;
                 }
+                return true;
             }
             function checkemptyError(listInput) {
                 let isEmptyError = false;
@@ -273,6 +274,12 @@
                 let isEmptyError = checkemptyError([cardName, cardCVC, cardDate, cardNumber]);
                 let isDateFormat = checkDateFormat(cardDate);
                 let isNumber = checkisNumber([cardCVC, cardNumber]);
+                // console.log(isDateFormat);
+                // console.log(isNumber)
+                console.log(isDateFormat)
+                if (!isEmptyError && isDateFormat && isNumber) {
+                    window.location.href = 'paysuccess.html'
+                }
             })
 
         </script>
