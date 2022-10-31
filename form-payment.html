@@ -18,17 +18,10 @@
     <div class="container">
         <form action="" class="form-control">
             <h1 class="form_title">Thanh toán</h1>
-            <div class="card_type">
-                <div class="card_paypal">
-                    <input type="radio">
-                    <div class="card_img">
-                        <img src="img/paypal.png" alt="">
-                    </div>
-                </div>
-            </div>
+ 
             <div class="card_type">
                 <div class="card_credits">
-                    <input type="radio">
+                    <input type="radio" id="checkcredits" class="checkbox" name = "card">
                     <p>Thẻ tín dụng</p>
                 </div>
                 <div class="card_img">
@@ -85,6 +78,14 @@
         var cardDate = document.querySelector('#card_date');
         var cardCVC = document.querySelector('#card_cvc');
         var form = document.querySelector('.form-control');
+        var checkboxCredits = document.querySelector('#checkcredits')
+        var checkboxPaypal = document.querySelector('#checkpaypal')
+        
+        var radios = document.querySelectorAll('.checkbox')
+        var check = document.getElementsByName('checkbox')
+        checkboxCredits.checked = true;
+      
+     
         function showError(input, message) {
             let parent = input.parentElement;
             let small = parent.querySelector('small');
