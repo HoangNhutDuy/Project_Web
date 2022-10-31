@@ -256,6 +256,18 @@ table td:last-child {
     overflow-x: hidden;
 }
 
+.table-product::-webkit-scrollbar {
+    width: 10px;
+}
+.table-product::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 100rem;
+}
+.table-product::-webkit-scrollbar-track{
+    border-radius: 100rem;
+    background-color: #f2f2f2;
+}
+
 .total_price {
     display: flex;
     justify-content: space-between;
