@@ -18,10 +18,10 @@
     <div class="container">
         <form action="" class="form-control">
             <h1 class="form_title">Thanh toán</h1>
- 
+
             <div class="card_type">
                 <div class="card_credits">
-                    <input type="radio" id="checkcredits" class="checkbox" name = "card">
+                    <input type="radio" id="checkcredits" class="checkbox" name="card">
                     <p>Thẻ tín dụng</p>
                 </div>
                 <div class="card_img">
@@ -116,59 +116,93 @@
             if (input.value.trim().match(dateformat)) {
                 let operator = dateString.split('/');
 
-                // Extract the string into month, date and year      
-                let datepart = [];
-                if (operator.length > 1) {
-                    pdatepart = dateString.split('/');
-                }
-                let day = parseInt(datepart[0]);
-                let month = parseInt(datepart[1]);
-                let year = parseInt(datepart[2]);
+            var radios = document.querySelectorAll('.checkbox')
+            var check = document.getElementsByName('checkbox')
+            checkboxCredits.checked = true;
 
-                // Create list of days of a month      
-                let ListofDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-                if (month == 1 || month > 2) {
-                    if (day > ListofDays[month - 1]) {
-                        ///This check is for Confirming that the date is not out of its range      
-                        return false;
+
+            function showError(input, message) {
+                let parent = input.parentElement;
+                let small = parent.querySelector('small');
+                parent.classList.add('error');
+                small.innerText = message;
+            }
+            function showSuccess(input) {
+                let parent = input.parentElement;
+                let small = parent.querySelector('small');
+                parent.classList.remove('error');
+                small.innerText = '';
+            }
+            function checkisNumber(listInput) {
+                let isNumber = false;
+                listInput.forEach(input => {
+                    if (!parseInt(input.value.trim())) {
+                        showError(input, 'Bạn chỉ được phép nhập số')
+                    } else {
+                        showSuccess(input);
+                        isNumber = true;
                     }
-                } else if (month == 2) {
-                    let leapYear = false;
-                    if ((!(year % 4) && year % 100) || !(year % 400)) {
-                        leapYear = true;
+                })
+                return isNumber;
+            }
+            function checkDateFormat(input) {
+                let dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+                if (input.value.trim().match(dateformat)) {
+                    let operator = dateString.split('/');
+
+                    // Extract the string into month, date and year      
+                    let datepart = [];
+                    if (operator.length > 1) {
+                        pdatepart = dateString.split('/');
                     }
-                    if ((leapYear == false) && (day >= 29)) {
-                        return false;
-                    } else
-                        if ((leapYear == true) && (day > 29)) {
-                            showError(input, 'Bạn đã nhập sai định dạng')
+                    let day = parseInt(datepart[0]);
+                    let month = parseInt(datepart[1]);
+                    let year = parseInt(datepart[2]);
+
+                    // Create list of days of a month      
+                    let ListofDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+                    if (month == 1 || month > 2) {
+                        if (day > ListofDays[month - 1]) {
+                            ///This check is for Confirming that the date is not out of its range      
                             return false;
                         }
-                }
-            } else {
-                showError(input, 'Bạn đã nhập sai định dạng');
+                    } else if (month == 2) {
+                        let leapYear = false;
+                        if ((!(year % 4) && year % 100) || !(year % 400)) {
+                            leapYear = true;
+                        }
+                        if ((leapYear == false) && (day >= 29)) {
+                            return false;
+                        } else
+                            if ((leapYear == true) && (day > 29)) {
+                                showError(input, 'Bạn đã nhập sai định dạng')
+                                return false;
+                            }
+                    }
+                } else {
+                    showError(input, 'Bạn đã nhập sai định dạng');
 
-                return false;
+                    return false;
+                }
             }
-        }
-        function checkemptyError(listInput) {
-            let isEmptyError = false;
-            listInput.forEach(input => {
-                if (!input.value.trim()) {
-                    showError(input, "Vui lòng điền vào chỗ trống")
-                    isEmptyError = true;
-                } else
-                    showSuccess(input);
-            });
-            return isEmptyError
-        }
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            let isEmptyError = checkemptyError([cardName, cardCVC, cardDate, cardNumber]);
-            let isDateFormat = checkDateFormat(cardDate);
-            let isNumber = checkisNumber([cardCVC, cardNumber]);
-        })
-    </script>
+            function checkemptyError(listInput) {
+                let isEmptyError = false;
+                listInput.forEach(input => {
+                    if (!input.value.trim()) {
+                        showError(input, "Vui lòng điền vào chỗ trống")
+                        isEmptyError = true;
+                    } else
+                        showSuccess(input);
+                });
+                return isEmptyError
+            }
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                let isEmptyError = checkemptyError([cardName, cardCVC, cardDate, cardNumber]);
+                let isDateFormat = checkDateFormat(cardDate);
+                let isNumber = checkisNumber([cardCVC, cardNumber]);
+            })
+        </script>
 </body>
 
 
