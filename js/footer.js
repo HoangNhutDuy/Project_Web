@@ -12,8 +12,8 @@ footer.innerHTML = `  <div class="container-fluid tm-container-small">
         <ul class="tm-footer-links pl-0">
             <li><a href="#">Quảng cáo</a></li>
             <li><a href="#">Hỗ trợ</a></li>
-            <li><a href="#">Công ty</a></li>
-            <li><a href="#">Liên hệ</a></li>
+            <li><a href="company.html">Công ty</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
         </ul>
     </div>
     <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
@@ -23,7 +23,7 @@ footer.innerHTML = `  <div class="container-fluid tm-container-small">
             <li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
             <li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
         </ul>
-        <a href="#" class="tm-text-gray text-right d-block mb-2">Điều khoản sử dụng</a>
+        <a href="term-condition.html" class="tm-text-gray text-right d-block mb-2">Điều khoản sử dụng</a>
         <a href="privacy-policy.html" class="tm-text-gray text-right d-block">Chính sách bảo mật</a>
     </div>
 </div>
