@@ -163,7 +163,7 @@
                         </tr>
                     </tbody>
                 </table>
-            
+
             </div>
             <div class="total_price">
                 <p>Tổng thành tiền</p>
@@ -190,6 +190,10 @@
 
             var radios = document.querySelectorAll('.checkbox')
             var check = document.getElementsByName('checkbox')
+            var pay = document.querySelector('.pay_btn');
+            pay.addEventListener('click', function(){
+                window.location.href = 'paysuccess.html';
+            })
             checkboxCredits.checked = true;
 
 
