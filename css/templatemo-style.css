@@ -149,6 +149,7 @@ a {
     transition: all 0.3s ease; 
 }
 a:hover { color:#009999; }
+i:hover { color: #009999;}
 .container-fluid { max-width: 1770px; }
 .tm-container-small { max-width: 1050px; }
 .btn { border-radius: 0; }
@@ -218,7 +219,10 @@ a.tm-text-primary:hover { color:#666666; }
     border-bottom: 4px solid transparent;
     font-size: 1.2rem;
 }
-
+ .nav-link.nav-link-7 i{
+    /* margin-left: -20px; */
+    color: #666666;
+}
 .nav-link-1.active,
 .nav-link-1:hover {
 }
