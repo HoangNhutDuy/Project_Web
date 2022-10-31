@@ -1,73 +1,86 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-:root{
-    --succcess-color : #009999;
+
+:root {
+    --succcess-color: #009999;
     --error-color: #e74c3c;
 
 }
-body{
+
+body {
     background-color: #F2F2F2;
     display: flex;
     justify-content: center;
 }
-.container{
+
+.container {
     margin-top: 3rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.form-control{
+
+.form-control {
     background-color: white;
     padding: 2rem 1.5rem;
     width: 50%;
 }
-.card_type p{
+
+.card_type p {
     margin-left: 0.5rem;
     margin-bottom: 0;
 }
 
-.form_title{
+.form_title {
     text-align: center;
     margin-bottom: 1.5rem;
 }
-.card_type{
+
+.card_type {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.card_type input{
+
+.card_type input {
     margin-right: 0.5rem;
     outline: none;
 }
-.card_credits{
+
+.card_credits {
     display: flex;
     align-items: center;
 }
-.card_paypal{
+
+.card_paypal {
     width: 100%;
     display: flex;
     align-items: center;
 }
-.card_img{
+
+.card_img {
     width: 25%;
     height: 25%;
 }
-.card_img img{
+
+.card_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.card_title{
+
+.card_title {
     font-size: 1.5rem;
     margin-top: 2rem;
     font-weight: bold;
 }
-.card_info input{
+
+.card_info input {
     margin-top: 1.5rem;
     width: 100%;
     outline: none;
@@ -75,10 +88,12 @@ body{
     border-bottom: 1px solid #F2F2F2;
     padding: 0.2rem 0;
 }
-.card_info{
+
+.card_info {
     position: relative;
 }
-.card_info_span{
+
+.card_info_span {
     top: 3.40625rem;
     left: 0;
     position: absolute;
@@ -88,28 +103,32 @@ body{
 }
 
 
-.card_footer{
+.card_footer {
     margin-top: 1.5rem;
     display: flex;
 
 }
-.card_date, .card_cvc{
-   width: 50%;
-   position: relative;
+
+.card_date,
+.card_cvc {
+    width: 50%;
+    position: relative;
 
 }
-.card_date{
+
+.card_date {
     margin-right: 2rem;
 }
 
-.card_footer input{
+.card_footer input {
     width: 100%;
     border: none;
     outline: none;
     border-bottom: 1px solid #F2F2F2;
     margin-top: 0.5rem;
 }
-.card_date_span{
+
+.card_date_span {
     position: absolute;
     left: 0;
     top: 4.5rem;
@@ -117,7 +136,8 @@ body{
     transition: 0.6s;
     width: 0;
 }
-.card_cvc_span{
+
+.card_cvc_span {
     position: absolute;
     left: 0;
     top: 4.5rem;
@@ -125,14 +145,16 @@ body{
     transition: 0.6s;
     width: 0;
 }
-.pay{
+
+.pay {
     width: 100%;
     margin-top: 2rem;
     display: flex;
     justify-content: center;
 
 }
-.pay_btn{
+
+.pay_btn {
     outline: none;
     border: none;
     padding: 0.5rem 14rem;
@@ -141,37 +163,45 @@ body{
     color: white;
     transition: 0.5s;
 }
-.pay_btn:hover{
+
+.pay_btn:hover {
     background-color: #086969;
 }
-input:focus ~ span{
-   width: 100%; 
+
+input:focus~span {
+    width: 100%;
 }
-.error input{
+
+.error input {
     border-bottom: 2px solid var(--error-color);
 
 }
-.error small{
+
+.error small {
     color: var(--error-color);
 }
-.shopping-cart{
+
+.shopping-cart {
     margin-left: 1.5rem;
     background-color: white;
     width: 30%;
     padding: 1.5rem 2rem;
 
 }
-.topic{
+
+.topic {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.topic p{
+
+.topic p {
     font-size: 1.2rem;
     margin-right: 1.5rem;
     margin-bottom: 0;
 }
-.topic > span{
+
+.topic>span {
     width: 22px;
     height: 22px;
     background-color: #009999;
@@ -182,47 +212,70 @@ input:focus ~ span{
     color: white;
     font-weight: bold;
 }
-.product_info{
+
+.product_info {
     display: flex;
     align-items: center;
 }
-.product_img{
+
+.product_img {
     width: 3rem;
     height: 3rem;
     margin-right: 1rem;
 }
-.product_img img{
+
+.product_img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-table{
+
+table {
     width: 100%;
     border: 1px solid #f0f4f8;
-  
+
 }
-td,th{
+
+td,
+th {
     padding: 1.5rem 1.2rem;
 }
-table th:last-child{
+
+table th:last-child {
     text-align: right;
 }
-table td:last-child{
+
+table td:last-child {
     text-align: right;
 }
-.table-product{
+
+.table-product {
     margin-top: 1.5rem;
     height: 350px;
     overflow-y: auto;
     overflow-x: hidden;
 }
-.total_price{
+
+.table-product::-webkit-scrollbar {
+    width: 10px;
+}
+.table-product::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 100rem;
+}
+.table-product::-webkit-scrollbar-track{
+    border-radius: 100rem;
+    background-color: #f2f2f2;
+}
+
+.total_price {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1.5rem;
 }
-.total_price p:last-child{
+
+.total_price p:last-child {
     transform: translateX(-1.5rem);
     font-weight: bold;
 }
