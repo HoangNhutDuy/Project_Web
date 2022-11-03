@@ -23,7 +23,7 @@ body {
     transition: all 0.3s ease;
     font-size: 2rem;
     color: #3399CC;
-
+    outline: none;
     padding: 2rem 1rem;
 
 }
@@ -45,7 +45,7 @@ body {
     display: block;
     text-decoration: none;
     color: #B1B7C1;
-    
+    position: relative;
     margin: 1rem 0;
 }
 
@@ -54,7 +54,28 @@ aside {
     /* background-color: gray; */
 }
 
+.admin_info {
+    display: flex;
+    margin-left: 0.5rem;
+    margin-top: 3rem;
+    align-items: center;
+    color: #B1B7C1;
+    font-size: 1.5rem;
+}
 
+.img_admin {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.6rem;
+}
+
+.img_admin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .container .sidebar {
     display: flex;
@@ -68,10 +89,9 @@ aside {
     font-weight: bold;
     align-items: center;
     margin-left: 2rem;
-    position: relative;
     transform: all 300ms ease;
-
     height: 3rem;
+    outline: none;
 }
 
 .container .top,
@@ -105,6 +125,10 @@ aside {
     margin-left: 1rem;
 }
 
+.container .sidebar a:last-child {
+    margin-top: 5rem;
+}
+
 .main {
     width: 120vh;
 }
@@ -126,14 +150,14 @@ aside {
     display: flex;
     margin: 2rem 0;
     justify-content: space-between;
-
+    align-items: center;
+    font-family: sans-serif;
 }
 
 .product label {
     margin-right: 2rem;
-    font-size: 1.5rem;
-    align-items: center;
-    color: #363949;
+    font-size: 1.2rem;
+    color: #000;
     font-weight: bold;
 }
 
@@ -141,15 +165,71 @@ aside {
     width: 65%;
     padding: 0.2rem 0.5rem;
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
 }
-.confirm{
+
+.confirm {
     text-align: center;
 }
+
 .confirm_input {
     text-align: center;
     outline: none;
     border: none;
     cursor: pointer;
     padding: 0.5rem 1.2rem;
+}
+
+.interface_settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.interface_settings h3 {
+    margin-right: 3rem;
+}
+
+.interface_settings input {
+    outline: none;
+    width: 60%;
+}
+
+.container_table {
+    height: 550px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.container_table::-webkit-scrollbar {
+    width: 0.1rem;
+}
+
+.main table {
+    margin: 2rem auto;
+    border-collapse: collapse;
+    border: 1px solid #000;
+    /* width: 100%; */
+}
+
+.main table img {
+    width: 6rem;
+    height: 6em;
+}
+
+.main table th,
+.main table td {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 1px solid #000;
+
+}
+
+.main table a {
+    text-decoration: none;
+    color: #000;
 }
