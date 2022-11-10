@@ -29,7 +29,7 @@
             </div>
             <div class="sidebar">
 
-                <a href="#">
+                <a href="#" class="homepage">
                     <i class="fa-sharp fa-solid fa-house"></i>
                     <h3>Trang chủ</h3>
                 </a>
@@ -52,7 +52,6 @@
             </div>
         </aside>
         <div class="main">
-
         </div>
     </div>
     <script>
@@ -60,37 +59,87 @@
         const category = document.querySelector('.category');
         const interface = document.querySelector('.interface');
         const productManagement = document.querySelector('.product_management');
+        const parts = document.querySelectorAll('.sidebar a');
+        const homepage = document.querySelector('.homepage')
 
+        Array.from(parts);
+        parts[0].classList.add('active')
+        for (let i = 0; i < parts.length; i++) {
+            parts[i].addEventListener('click', function () {
+
+                let j = 0
+                while (j < parts.length) {
+                    parts[j++].classList.remove('active')
+                }
+                parts[i].classList.add('active');
+            })
+        }
         function render() {
-            main.innerHTML = `<form action="" class="form-control">
-                <h1>Thông tin chung</h1>
+            main.innerHTML = `
+            <form action="" class="form-control">
+                <h1>Thông tin của admin</h1>
                 <div class="product">
-                    <label for="">Tên sản phẩm: </label>
-                    <input type="text">
+                    <label for="">Tên: </label>
+                    <input type="text" value="Hoàng Nhựt Duy" readonly>
                 </div>
 
                 <div class="product">
-                    <label for="">Ảnh: </label>
-                    <input type="file">
+                    <label for="">Email: </label>
+                    <input type="email" value="20130238@st.hcmuaf.edu.vn" readonly>
                 </div>
                 <div class="product">
-                    <label for="">Danh mục: </label>
-                    <input type="text">
+                    <label for="">Giới tính: </label>
+                    <div class="gender">
+                        <input type="radio" name="gender" checked="true" readonly>
+                        <p>Nam</p>
+                        <input type="radio" name="gender" id="" readonly>
+                        <p>Nữ</p>
+                    </div>
+
                 </div>
                 <div class="product">
-                    <label for="">Giá bán: </label>
-                    <input type="text">
-                </div>
-                <div class="product">
-                    <label for="">Mô tả: </label>
-                    <input type="text">
+                    <label for="">Ngày sinh: </label>
+                    <input type="text"value="03/04/2002" readonly>
                 </div>
                 <div class="confirm">
-                    <input type="submit" value="Xác nhận" class="confirm_input">
+                    <input type="submit" value="Thêm" class="confirm_input">
                 </div>
             </form>`
         }
         render();
+        homepage.addEventListener('click', function () {
+            main.innerHTML = `
+            <form action="" class="form-control">
+                <h1>Thông tin của admin</h1>
+                <div class="product">
+                    <label for="">Tên: </label>
+                    <input type="text" value="Hoàng Nhựt Duy">
+
+                </div>
+
+                <div class="product">
+                    <label for="">Email: </label>
+                    <input type="email" value="20130238@st.hcmuaf.edu.vn">
+                </div>
+                <div class="product">
+                    <label for="">Giới tính: </label>
+                    <div class="gender">
+                        <input type="radio" name="gender" checked="true">
+                        <p>Nam</p>
+                        <input type="radio" name="gender" id="">
+                        <p>Nữ</p>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <label for="">Ngày sinh: </label>
+                    <input type="text"value="03/04/2002">
+                </div>
+                <div class="confirm">
+                    <input type="submit" value="Thêm" class="confirm_input">
+                </div>
+            </form>`;
+        })
         category.addEventListener('click', () => {
             main.innerHTML = `<form action="" class="form-control">
                 <h1>Thông tin chung</h1>

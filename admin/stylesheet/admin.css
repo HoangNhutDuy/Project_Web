@@ -14,7 +14,6 @@ body {
 }
 
 .container .top {
-    margin-top: 1rem;
     background-color: white;
 }
 
@@ -100,13 +99,13 @@ aside {
     background-color: #3C4B64;
 }
 
-.container .sidebar a:active {
+.container .sidebar a.active {
     margin-left: 0;
     background-color: var(--color-light);
     color: white;
 }
 
-.container .sidebar a:active:before {
+.container .sidebar a.active:before {
     content: "";
     width: 0.5rem;
     height: 100%;
@@ -233,3 +232,10 @@ aside {
     text-decoration: none;
     color: #000;
 }
+
+.gender {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 29rem;
+}
+
