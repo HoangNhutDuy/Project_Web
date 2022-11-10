@@ -16,6 +16,38 @@ TemplateMo 556 Catalog-Z
 https://templatemo.com/tm-556-catalog-z
 
 -->
+<style>
+    .interactive{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.2rem;
+        color: #666;
+    }
+    .interactive div{
+        margin-right: 2rem;
+    }
+    .sale{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 0;
+        height: 4rem;
+    }
+    .sale div{
+        width: 50%;
+        height: 100%;
+    }
+    .sale .btn{
+        background-color: #009999;  
+        width: 90%;
+        height: 100%;
+        border-radius: 0.2rem;
+        color: white;
+    }
+    .sale .btn:hover{
+        background-color: #4bc5c5;  
+    }
+</style>
 </head>
 <body>
     <!-- Page Loader -->
@@ -51,9 +83,18 @@ https://templatemo.com/tm-556-catalog-z
                     <p class="mb-4">
                         Một tai nghe màu hồng được đặt ở chính giữa trên nền màu hồng.
                     </p>
-                    <div class="text-center mb-5">
-                        <a href="form-payment.html" class="btn btn-primary tm-btn-big">Mua</a>
-                    </div>                    
+                    <div class="interactive">
+                        <div class="favorite">
+                            <i class="fa-solid fa-heart" style="cursor: pointer;"></i>
+                            <span>lượt yêu thích</span>
+                            <span class="tm-text-primary">: 2,710</span>
+                        </div>
+                        <div class="download">
+                            <i class="fa-solid fa-download"></i>
+                            <span> lượt tải xuống </span>
+                            <span class="tm-text-primary">: 75,532 </span>
+                        </div>
+                    </div>
                     <div class="mb-4 d-flex flex-wrap">
                         <div class="mr-4 mb-2">
                             <span class="tm-text-gray-dark">Kích thước: </span><span class="tm-text-primary">1920x1080</span>
@@ -62,6 +103,17 @@ https://templatemo.com/tm-556-catalog-z
                             <span class="tm-text-gray-dark">Loại tệp: </span><span class="tm-text-primary">JPG</span>
                         </div>
                     </div>
+                    <div class="sale">
+                        <div class="to-buy">
+                            <button class="btn buy-btn">Mua</button>
+                        </div>
+                        <div class="to-cart">
+                            <button class="btn cart-btn">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div id="text-center">
+                        
+                    </div>                    
                     <div>
                         <h3 class="tm-text-gray-dark mb-3">Tìm kiếm ảnh theo thẻ</h3>
                         <a href="#" class="tm-text-primary mr-4 mb-2 d-inline-block">Mây</a>
