@@ -101,9 +101,7 @@
                     <label for="">Ngày sinh: </label>
                     <input type="text"value="03/04/2002" readonly>
                 </div>
-                <div class="confirm">
-                    <input type="submit" value="Thêm" class="confirm_input">
-                </div>
+             
             </form>`
         }
         render();
@@ -113,38 +111,39 @@
                 <h1>Thông tin của admin</h1>
                 <div class="product">
                     <label for="">Tên: </label>
-                    <input type="text" value="Hoàng Nhựt Duy">
-
+                    <input type="text" value="Hoàng Nhựt Duy" readonly>
                 </div>
 
                 <div class="product">
                     <label for="">Email: </label>
-                    <input type="email" value="20130238@st.hcmuaf.edu.vn">
+                    <input type="email" value="20130238@st.hcmuaf.edu.vn" readonly>
                 </div>
                 <div class="product">
                     <label for="">Giới tính: </label>
                     <div class="gender">
-                        <input type="radio" name="gender" checked="true">
+                        <input type="radio" name="gender" checked="true" readonly>
                         <p>Nam</p>
-                        <input type="radio" name="gender" id="">
+                        <input type="radio" name="gender" id="" readonly>
                         <p>Nữ</p>
                     </div>
 
                 </div>
                 <div class="product">
                     <label for="">Ngày sinh: </label>
-                    <input type="text"value="03/04/2002">
+                    <input type="text"value="03/04/2002" readonly>
                 </div>
-                <div class="confirm">
-                    <input type="submit" value="Thêm" class="confirm_input">
-                </div>
-            </form>`;
+             
+            </form>`
         })
         category.addEventListener('click', () => {
             main.innerHTML = `<form action="" class="form-control">
                 <h1>Thông tin chung</h1>
                 <div class="product">
-                    <label for="">Tên sản phẩm: </label>
+                    <label for="">Mã danh mục: </label>
+                    <input type="text">
+                </div>
+                <div class="product">
+                    <label for="">Tên danh mục: </label>
                     <input type="text">
                 </div>
 
@@ -152,14 +151,8 @@
                     <label for="">Ảnh: </label>
                     <input type="file">
                 </div>
-                <div class="product">
-                    <label for="">Danh mục: </label>
-                    <input type="text">
-                </div>
-                <div class="product">
-                    <label for="">Giá bán: </label>
-                    <input type="text">
-                </div>
+              
+             
                 <div class="product">
                     <label for="">Mô tả: </label>
                     <input type="text">
