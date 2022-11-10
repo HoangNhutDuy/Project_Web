@@ -6,6 +6,7 @@
 
 .container {
     margin: 1.5rem auto;
+
 }
 
 .header {
@@ -14,24 +15,42 @@
 }
 
 .header i {
-    font-size: 2rem;
+    font-size: 3rem;
+}
+.table_product{
+    margin: 4.5rem 0;
+    height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.table_product::-webkit-scrollbar{
+    width: 0;
 }
 .container table{
     width: 100%;
-    text-align: center;
+    text-align: left;
+    border: 1px solid #000;
+}
+.container table th,
+.container table td{
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
 }
 .container table td{
-    text-align: center;
+    text-align: left;
 }
 .container table .img_product{
     width: 5rem;
     height: 5rem;
-    margin: 0 auto;
 }
 .img_product img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    margin-left: -0.5rem;
+}
+table th:last-child{
 }
 table td:last-child{
     width: 50%;
@@ -41,4 +60,12 @@ table td:last-child{
     width: 25%;
     border: none;
     outline: none;
+    color: white;
+    background-color: #009999;
+    transition: 0.5s;
+}
+.action button:hover{
+    background-color: #086969;
+    color: white;
+
 }
