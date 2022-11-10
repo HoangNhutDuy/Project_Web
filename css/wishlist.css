@@ -50,10 +50,11 @@
     object-fit: cover;
     margin-left: -0.5rem;
 }
-table th:last-child{
-}
 table td:last-child{
     width: 50%;
+}
+tbody tr:nth-child(odd){
+    background-color: #eee;
 }
 .action button{
     padding: 0.5rem 0;
