@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 1.5rem auto;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.header i {
+    font-size: 2rem;
+}
+.container table{
+    width: 100%;
+    text-align: center;
+}
+.container table td{
+    text-align: center;
+}
+.container table .img_product{
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+}
+.img_product img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+table td:last-child{
+    width: 50%;
+}
+.action button{
+    padding: 0.5rem 0;
+    width: 25%;
+    border: none;
+    outline: none;
+}
