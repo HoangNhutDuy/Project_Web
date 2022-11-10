@@ -17,55 +17,66 @@
 .header i {
     font-size: 3rem;
 }
-.table_product{
+
+.table_product {
     margin: 4.5rem 0;
     height: 450px;
     overflow-y: auto;
     overflow-x: hidden;
 }
-.table_product::-webkit-scrollbar{
+
+.table_product::-webkit-scrollbar {
     width: 0;
 }
-.container table{
+
+.container table {
     width: 100%;
     text-align: left;
     border: 1px solid #000;
 }
+
 .container table th,
-.container table td{
+.container table td {
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
 }
-.container table td{
+
+.container table td {
     text-align: left;
 }
-.container table .img_product{
+
+.container table .img_product {
     width: 5rem;
     height: 5rem;
 }
-.img_product img{
+
+.img_product img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     margin-left: -0.5rem;
 }
-table td:last-child{
+
+table td:last-child {
     width: 50%;
 }
-tbody tr:nth-child(odd){
+
+tbody tr:nth-child(odd) {
     background-color: #eee;
 }
-.action button{
+
+.action button {
     padding: 0.5rem 0;
-    width: 25%;
+    width: 30%;
     border: none;
     outline: none;
     color: white;
     background-color: #009999;
     transition: 0.5s;
 }
-.action button:hover{
+
+.action button:hover {
     background-color: #086969;
     color: white;
 
