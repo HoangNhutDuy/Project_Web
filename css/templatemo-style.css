@@ -179,7 +179,7 @@ i:hover { color: #009999;}
 }
 
 .form-group { margin-bottom: 25px; }
-.tm-btn-big { padding: 12px 90px 14px; }
+.tm-btn-big { padding: 1rem 1.2rem; }
 
 .navbar-toggler:focus { box-shadow: none; }
 .navbar-brand {

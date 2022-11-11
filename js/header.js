@@ -27,7 +27,7 @@ header.innerHTML = `
             <button class="nav-link nav-link-6"> <a href="register.html">Đăng ký</a></button>
         </li>
         <li class="nav-item">
-            <a class="nav-link nav-link-8" href="#"><i class="fa-solid fa-heart"></i></a>
+            <a class="nav-link nav-link-8" href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
         </li>
         <li class="nav-item">
             <a class="nav-link nav-link-7" href="shopping-cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
