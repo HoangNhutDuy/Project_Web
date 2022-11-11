@@ -157,46 +157,7 @@
             });
         </script>
         <script>
-            // var buttonsRemove = document.querySelectorAll('.remove');
-            var products = document.querySelectorAll('.product_details')
-            var cartPage = document.querySelector('.cart_page')
-            var arrayProducts = Array.from(products);
-            function render() {
-                cartPage.innerHTML = ` <table class="table-product">
-                <tr>
-                    <th>Sản phẩm</th>
-                    <th>Giá tiền</th>
-                </tr>
-                </table>`;
-                for (var i = 0; i < arrayProducts.length; i++) {
-                    cartPage.innerHTML += `      <table class="table-product">
-                <tr>
-                    <td>
-                        <div class="product_details">
-                            <div class="product_img">
-                                <img src="img/img-05.jpg" alt="">
-                            </div>
-                            <div class="product_info">
-                                <p>Hangers</p>
-                                <small>Giá: 50000VND</small>
-                                <br>
-                                <a href="#" class="remove" onclick ="deleteProduct(${i})">Xóa</a>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        50000VND
-                    </td>
-                </tr>
-                </table>`;
-                }
-            }
-
-            render();
-            function deleteProduct(index) {
-                arrayProducts.splice(index, 1);
-                render();
-            }
+          
         </script>
 </body>
 
